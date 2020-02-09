@@ -1,22 +1,44 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Subscribe v-bind:plans="plans"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Subscribe from './components/Subscribe.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Subscribe
+  },
+  data() {
+    return {
+      plans: [
+        {
+          name: 'Medium',
+          price: 49
+        },
+        {
+          name: 'Large',
+          price: 89
+        },
+        {
+          name: 'Large Plus',
+          price: 129
+        }
+      ]
+    }
   }
 }
 </script>
 
 <style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
