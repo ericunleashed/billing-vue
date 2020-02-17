@@ -17,15 +17,36 @@ export default {
       plans: [
         {
           name: 'Medium',
-          price: 49
+          price: 49,
+          currency: '$',
+          features: [
+            {feature: '3 Users', available: true},
+            {feature: '125,000 API calls', available: true},
+            {feature: 'Unleashed University', available: false},
+            {feature: 'Premium Support', available: false}
+          ]
         },
         {
           name: 'Large',
-          price: 89
+          price: 89,
+          currency: '$',
+          features: [
+            {feature: '8 Users', available: true},
+            {feature: '250,000 API calls', available: true},
+            {feature: 'Unleashed University', available: true},
+            {feature: 'Premium Support', available: false}
+          ]
         },
         {
           name: 'Large Plus',
-          price: 129
+          price: 129,
+          currency: '$',
+          features: [
+            {feature: '20 Users', available: true},
+            {feature: '500,000 API calls', available: true},
+            {feature: 'Unleashed University', available: true},
+            {feature: 'Premium Support', available: true}
+          ]
         }
       ]
     }

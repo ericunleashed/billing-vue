@@ -29,4 +29,18 @@
     }
   }
 }
+.btn-default {
+  font-size: 16px;
+  font-weight: 500;
+  height: 38px;
+  padding: 0 30px;
+  background-color: #4a4a4a;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  z-index: 1;
+  line-height: normal;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
 </style>
