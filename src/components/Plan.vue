@@ -9,15 +9,23 @@
             v-bind:class="{'unavailable':!feature.available}" v-bind:feature="feature">{{feature.feature}}</div>
         </div>
         <div class="button-container">
-            <button class="btn-default btn-subscribe">Subscribe</button>
+            <button class="btn-default btn-subscribe"  v-on:click="Next()">Subscribe</button>
         </div>
     </div>
 </template>
 
 <script>
+import { mapMutations } from 'vuex';
 export default {
     name: 'Plan',
-    props: ['plan']
+    props: ['plan'],
+    methods: {
+        ...mapMutations(['setPlan']),
+        Next() {
+            this.setPlan(this.plan);
+            this.$router.push({path:'modules'});
+        }
+    }
 }
 </script>
 
@@ -31,7 +39,6 @@ export default {
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    border: 1px solid lightgray;
     padding: 5px;
     color: #666;
     border-radius: 5px;
@@ -48,7 +55,8 @@ export default {
             font-size: 40px;
         }
         h4 {
-            margin-bottom: 5px;
+            margin-top: 5px;
+            font-weight: 500;
         }
     }
     .description-container {
@@ -64,12 +72,6 @@ export default {
     }
     .button-container {
         margin-bottom: 10px;
-        .btn-subscribe {
-            background-color: #FC4F4F;
-            &:hover {
-                background-color: rgb(214, 54, 54);
-            }
-        }
     }
 }
 </style>

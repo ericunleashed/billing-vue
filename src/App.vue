@@ -1,9 +1,5 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view/>
   </div>
 </template>
@@ -34,13 +30,29 @@
   font-weight: 500;
   height: 38px;
   padding: 0 30px;
-  background-color: #4a4a4a;
-  color: #ffffff;
+  background-color: #f0f0f0;
+  color: #6b6b6b;
   border: none;
   border-radius: 4px;
   z-index: 1;
   line-height: normal;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  border: 1px solid #cecece;
+  &:hover {
+    background-color: #cecece;
+  }
+}
+.btn-subscribe {
+  background-color: #FC4F4F;
+  color: #f0f0f0;
+  border: none;
+  &:hover {
+      background-color: rgb(214, 54, 54);
+  }
+}
+.container {
+    width: 60%;
+    margin: 150px auto;
 }
 </style>
