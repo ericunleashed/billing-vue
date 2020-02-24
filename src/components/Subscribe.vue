@@ -1,5 +1,6 @@
 <template>
     <div class="container">
+        <div class="background"></div>
         <div class="title">
             <h1>Subscribe to a plan that fits your business</h1>
         </div>
@@ -62,11 +63,25 @@ export default {
 .container {
     margin-top: 80px;
     .title {
-    margin-bottom: 80px;
+        margin-bottom: 80px;
+        color: white;
+        h1 {
+            font-size: 35px;
+        }
     }
     .plans {
         display: flex;
         justify-content: center;
     }
+}
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, rgb(248, 86, 86) 15%, #FC4F4F 40%);
+    clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 45vh);
+    z-index: -1;
 }
 </style>

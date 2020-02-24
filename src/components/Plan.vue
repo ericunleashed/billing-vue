@@ -41,9 +41,11 @@ export default {
     text-align: center;
     padding: 5px;
     color: #666;
-    border-radius: 5px;
+    border-radius: 16px;
     border: 1px solid #E1E7E9;
-    margin: 5px;
+    background-color: white;
+    margin: 20px;
+    box-shadow: 0 0.5rem 1.25rem rgba(0,0,0,0.3);
     .price-container {
         display: flex;
         flex-direction: column;
@@ -52,7 +54,7 @@ export default {
         padding: 5px;
         margin-top: 10px;
         .price {
-            font-size: 40px;
+            font-size: 60px;
         }
         h4 {
             margin-top: 5px;
@@ -62,7 +64,7 @@ export default {
     .description-container {
         margin: 20px auto;
         .feature {
-            margin-bottom: 7px;
+            margin-bottom: 15px;
             color: #FC4F4F;
             &.unavailable {
                 color: #dddddd;
@@ -72,6 +74,7 @@ export default {
     }
     .button-container {
         margin-bottom: 10px;
+        width: 70%;
     }
 }
 </style>

@@ -11,6 +11,11 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #nav {
@@ -39,6 +44,9 @@
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   border: 1px solid #cecece;
+  border-radius: 100px;
+  width: 100%;
+  outline: none;
   &:hover {
     background-color: #cecece;
   }

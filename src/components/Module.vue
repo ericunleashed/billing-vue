@@ -27,6 +27,7 @@ export default {
 
 <style lang="less" scoped>
 .module {
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;

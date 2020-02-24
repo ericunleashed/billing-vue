@@ -37,6 +37,7 @@ export default {
 
 <style  lang="less" scoped>
 .cart-container {
+    background-color: white;
     min-width: 350px;
     border: 1px solid #E1E7E9;   
     border-radius: 5px;
@@ -44,7 +45,7 @@ export default {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px;
+        padding: 15px 10px;
     }
     .total-container {
         border-top: 1px solid #E1E7E9;
@@ -52,7 +53,7 @@ export default {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px;
+            padding: 15px 10px;
             div {
                 font-weight: 600;
             }
