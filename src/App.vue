@@ -6,7 +6,7 @@
 
 <style lang="less">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Spartan';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -55,6 +55,7 @@
   background-color: #FC4F4F;
   color: #f0f0f0;
   border: none;
+  text-transform: uppercase;
   &:hover {
       background-color: rgb(214, 54, 54);
   }
@@ -62,5 +63,15 @@
 .container {
     width: 60%;
     margin: 150px auto;
+}
+.background {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position:fixed;
+    padding:0;
+    margin:0;
 }
 </style>

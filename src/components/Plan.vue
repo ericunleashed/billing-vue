@@ -1,7 +1,7 @@
 <template>
     <div class="plan-container">
         <div class="price-container">
-            <h4>{{plan.name}}</h4>
+            <h3>{{plan.name}}</h3>
             <div class="price">{{plan.currency}}{{plan.price}}</div>
         </div>
         <div class="description-container">
@@ -56,16 +56,21 @@ export default {
         .price {
             font-size: 60px;
         }
-        h4 {
-            margin-top: 5px;
+        h3 {
+            margin-bottom: 30px;
             font-weight: 500;
+            color: #FC4F4F;
+            text-transform: uppercase;
         }
     }
     .description-container {
         margin: 20px auto;
         .feature {
-            margin-bottom: 15px;
-            color: #FC4F4F;
+            border-bottom: 1px solid #eee;
+            padding: 1rem;
+            &:last-child {
+                border-bottom: none;
+            }
             &.unavailable {
                 color: #dddddd;
                 text-decoration: line-through;

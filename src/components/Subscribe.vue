@@ -73,15 +73,9 @@ export default {
         display: flex;
         justify-content: center;
     }
-}
-.background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: linear-gradient(135deg, rgb(248, 86, 86) 15%, #FC4F4F 40%);
-    clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 45vh);
-    z-index: -1;
+    .background {
+        background: linear-gradient(135deg, rgb(248, 86, 86) 15%, #FC4F4F 40%);
+        clip-path: polygon(0 0, 100% 0, 100% 48vh, 0 48vh);
+    }
 }
 </style>

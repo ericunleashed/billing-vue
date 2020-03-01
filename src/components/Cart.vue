@@ -1,25 +1,25 @@
 <template>
     <div class="cart-container">
         <div class="plan-container" v-if="cart.plan">
-            <div class="name">{{cart.plan.name}} Subscription</div>
+            <div class="name">Base Plan: <span>{{cart.plan.name}}</span></div>
             <div class="price">{{currency}}{{cart.plan.price.toFixed(2)}}</div>
         </div>
         <div class="modules-container" v-for="module in cart.modules" v-bind:key="module.name">
-            <div class="name">{{module.name}} Module</div>
+            <div class="name">Module: <span>{{module.name}}</span></div>
             <div class="price">{{currency}}{{module.price.toFixed(2)}}</div>
         </div>
         <div class="plan-container" v-if="!cart.plan && cart.modules.length === 0" id="empty">Your cart is empty</div>
         <div class="total-container">
             <div class="total" id="subtotal">
-                <span>Subtotal</span>
+                <span>Subtotal:</span>
                 <div>{{currency}}{{subtotal.toFixed(2)}}</div>
             </div>
             <div class="total" id="tax">
-                <span>GST</span>
+                <span>GST(15%):</span>
                 <div>{{currency}}{{tax}}</div>
             </div>
             <div class="total" id="total">
-                <span>Total</span>
+                <span>Total:</span>
                 <div>{{currency}}{{total}}</div>
             </div>
         </div>
@@ -63,6 +63,9 @@ export default {
             border-top: 1px solid #E1E7E9;
             font-weight: 800;
         }
+    }
+    .name span {
+        font-weight: 600;
     }
 }
 </style>
