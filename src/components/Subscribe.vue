@@ -78,4 +78,16 @@ export default {
         clip-path: polygon(0 0, 100% 0, 100% 48vh, 0 48vh);
     }
 }
+@media screen and (max-width: 1200px) {
+    .container .plans {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        .plan-container {
+            width: 100%;
+            min-width: auto;
+            max-width: auto;
+        }
+    }
+}
 </style>

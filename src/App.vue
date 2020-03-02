@@ -74,4 +74,9 @@
     padding:0;
     margin:0;
 }
+@media screen and (max-width: 800px) {
+  .container {
+    width: 90%;
+  }
+}
 </style>

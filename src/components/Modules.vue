@@ -65,6 +65,7 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 90%;
     }
     .cart-box {
         box-shadow: 0 0.5rem 1.25rem rgba(0,0,0,0.3);
@@ -101,6 +102,18 @@ export default {
     .cart-box {
         width: 100%;
         margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .modules-container .modules {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        .module {
+            width: 100%;
+            margin: 30px auto;
+        }
     }
 }
 </style>

@@ -68,4 +68,9 @@ export default {
         font-weight: 600;
     }
 }
+@media screen and (max-width: 800px) {
+    .cart-container {
+        min-width: 100px;
+    }
+}
 </style>
